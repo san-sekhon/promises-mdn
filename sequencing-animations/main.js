@@ -16,7 +16,7 @@ async function animationSequence() {
   try {
     await alice1.animate(aliceTumbling, aliceTiming).finished;
     await alice2.animate(aliceTumbling, aliceTiming).finished;
-    await alice3.animate(aliceTumbling, aliceTiming);
+    await alice3.animate(aliceTumbling, aliceTiming).finished;
   } catch (error) {
     console.error(`Could not run sequence: ${error}`);
     
